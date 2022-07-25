@@ -1,9 +1,9 @@
 body {
-    height: 99%;
+    height: 100vw;
     width: 100%;
     background-image: url("../img/bg.png");
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px); */
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 99% 150%;

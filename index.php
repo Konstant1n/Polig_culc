@@ -9,6 +9,7 @@
       if($user){
         if(isset($_POST['remember'])) {
           setcookie('user_id', $user['id'], time()+60*60*24*30, '/');
+          $_SESSION["user_id"] = $user['id'];
         } else {
           $_SESSION["user_id"] = $user['id'];
         }

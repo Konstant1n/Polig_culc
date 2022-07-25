@@ -2,17 +2,40 @@
   require('partials/header.php');
 
   ?>
+
 <body>
 
     <div class="bg">
-    <form>
-      <input type="button" onclick="window.location.href ='logout.php';" value="Logout"/>
-    </form>
 
-    <form>
-      <input type="button" onclick="window.location.href ='/admin/';" value="Admin"/>
-    </form>
 
+        <div class="calc-head clearfix">
+            <div class="logo"></div>
+
+
+            <div class="hello">
+                <?php
+
+            if (isset($_SESSION["user_id"]) && ($_SESSION["user_id"] != null)){
+                $sql = "SELECT * FROM users WHERE id =" . $_SESSION["user_id"];
+                $result = mysqli_query($conn, $sql);
+                $user = $result->fetch_assoc();
+                
+            }
+
+            ?>
+
+                <h3>Вітаємо, <?php echo $user['username']; ?></h3>
+
+                <form>
+                    <input type="button" onclick="window.location.href ='logout.php';" value="Logout" />
+                </form>
+
+                <form>
+                    <input type="button" onclick="window.location.href ='/admin/';" value="Admin panel" />
+                </form>
+
+            </div>
+        </div>
 
 
 
@@ -64,6 +87,43 @@
 
         </form>
 
+            
+        
+        <div class="table-bloc">
+            <?php 
+                //$sql = "SELECT * FROM orders WHERE userid =" . $_SESSION["user_id"];
+                 $sql = "SELECT * FROM orders WHERE users_id =" . $_SESSION["user_id"];
+                    $result = mysqli_query($conn,$sql);
+            ?>
+            <h4>Історія Ваших замовлень:</h4>
+            <table class="resp-tab">
+                <thead>
+                    <tr>
+                        <th>Номер замовлення</th>
+                        <th>Тип</th>
+                        <th>Розмір</th>
+                        <th>Матеріал</th>
+                        <th>Кількість</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                    <tr>
+                        <td><?php echo $row['id']?></td>
+                        <td><?php echo $row['type']?></td>
+                        <td><?php echo $row['size']?></td>
+                        <td><?php echo $row['paper']?></td>
+                        <td><?php echo $row['amount']?></td>
+                    </tr>
+                    <?php
+                    }
+                    ?>
+                </tbody>
+            </table>
+
+        </div>
 
     </div>
 

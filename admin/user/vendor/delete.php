@@ -10,4 +10,4 @@ mysqli_query($connect, "DELETE FROM `users` WHERE `users`.`id` = '$id'");
 
 
 
-header('Location: http://localhost/admin/user/');
+header('Location: /admin/user/');

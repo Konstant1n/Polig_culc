@@ -17,7 +17,7 @@
     <body>
 
     <form>
-      <input type="button" onclick="window.location.href ='http://localhost/admin/';" value="Admin"/>
+      <input type="button" onclick="window.location.href ='/admin/';" value="Admin"/>
     </form>
 
     <table class="table">

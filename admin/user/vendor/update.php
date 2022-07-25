@@ -16,4 +16,4 @@ $role = $_POST['role'];
 mysqli_query($connect, "UPDATE `users` SET `username` = '$username', `email` = '$email', `role` = '$role' WHERE `users`.`id` = '$id'");
 
 
-header('Location: http://localhost/admin/user/');
+header('Location: /admin/user/');

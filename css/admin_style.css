@@ -1,5 +1,5 @@
 body {
-    height: 99%;
+    height: 100vw;
     width: 100%;
     background-image: url("../img/bg.png");
     -webkit-backdrop-filter: blur(10px);
@@ -63,3 +63,5 @@ body {
     margin-right: 30px;
     padding: 30px 53px 45px;
 }
+
+

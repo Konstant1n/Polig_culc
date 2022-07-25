@@ -28,4 +28,4 @@ mysqli_query($connect, "UPDATE `orders` SET `type` = '$type', `size` = '$size', 
  * Переадресация на главную страницу
  */
 
-header('Location: http://localhost/admin/orders/');
+header('Location: /admin/orders/');

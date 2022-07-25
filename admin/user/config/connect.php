@@ -4,7 +4,7 @@
 $servername = "localhost";
         $database = "blog_php";
         $username = "root";
-        $password = "";
+        $password = "root";
         // Создаем соединение
         $connect = mysqli_connect($servername, $username, $password, $database);
 

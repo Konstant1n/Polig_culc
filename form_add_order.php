@@ -1,5 +1,6 @@
 <?php 
 include "config/db.php";
+session_start(); 
 
 if (!empty($_POST)) {
     // Записуємо в змінну значення з обраного чекбоксу
@@ -8,10 +9,11 @@ if (!empty($_POST)) {
     $size = trim($_POST['size']);
     $paper = trim($_POST['paper']);
     $amount = trim($_POST['amount']);
+    $userID = $_SESSION["user_id"];
 
 }
 
-         $sql = "INSERT INTO `orders` (`type`, `size`, `paper`, `amount`) VALUES ('{$figure_type}', '{$size}', '{$paper}', '{$amount}')";
+$sql = "INSERT INTO `orders` (`type`, `size`, `paper`, `amount`, `users_id`) VALUES ('{$figure_type}', '{$size}', '{$paper}', '{$amount}', '{$userID}')";
     if (mysqli_query($conn, $sql)) {
 
         echo "New record created successfully";
