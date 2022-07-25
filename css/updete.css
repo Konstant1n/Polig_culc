@@ -1,0 +1,34 @@
+body {
+    height: 99%;
+    width: 100%;
+    background-image: url("../img/bg.png");
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 99% 150%;
+}
+h3 {
+    margin-left: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.01cm;
+    color: #000000;
+
+}
+form {
+    margin-left: 500px;
+}
+
+p {
+    margin-left: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.01cm;
+    color: #000000; 
+}

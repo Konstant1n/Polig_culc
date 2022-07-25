@@ -1,0 +1,26 @@
+/* body {
+    color: #333333;
+} */
+.logo , .mainText , .loginForm ,
+footer {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+} 
+.logo img {
+    width: 200px;
+}
+.mainFooter ul {
+    list-style-type: none;
+    display: block;
+    /* why it doesn't work? (¬_¬") */
+    border-bottom: 1px solid black;    
+}
+.mainFooter li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+}
