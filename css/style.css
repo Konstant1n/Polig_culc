@@ -100,7 +100,7 @@ h2 {
     align-items: flex-start;
   }
   .form-block div {
-    margin: 0 auto;
+    margin: 50px auto;
     min-width: 200px;
   }
   .form-block #submit {

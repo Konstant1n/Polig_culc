@@ -110,6 +110,8 @@
                     <?php
                         while ($row = mysqli_fetch_assoc($result)) {
                     ?>
+
+                    
                     <tr>
                         <td><?php echo $row['id']?></td>
                         <td><?php echo $row['type']?></td>

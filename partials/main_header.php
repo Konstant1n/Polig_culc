@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="/../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/../css/style.css">
     <link rel="stylesheet" type="text/css" href="/../css/table.css">
+    <link rel="stylesheet" type="text/css" href="/../css/form.css">
     <title>Замовлення</title>
 </head>
 
