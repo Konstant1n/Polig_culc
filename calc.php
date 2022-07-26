@@ -31,7 +31,7 @@
                 </form>
 
                 <form>
-                    <input type="button" onclick="window.location.href ='/admin/';" value="Управління" />
+                    <input type="button" onclick="window.location.href ='/admin/';" value="Управління" id="administration"/>
                 </form>
 
             </div>
@@ -130,5 +130,10 @@
     </div>
 
     <?php 
+    if($user['role'] !="admin") {
+        echo '<script src="js/main.js"></script>';
+    }
+
   require('partials/footer.php');
+  
 ?>
