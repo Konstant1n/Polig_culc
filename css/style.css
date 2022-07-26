@@ -79,18 +79,61 @@ h2 {
   height: 40px;
   font-family: "Roboto";
   cursor: pointer;
+  background: rgb(254, 231, 154);
+  background: linear-gradient(top, rgb(254, 231, 154) 0%, rgb(254, 193, 81) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fee79a", endColorstr="#fec151", GradientType=0);
+  border-radius: 30px;
+  -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  border: 1px solid #D69E31;
+  color: #85592e;
+  cursor: pointer;
+  font: bold 15px Helvetica, Arial, sans-serif;
+  height: 35px;
+  margin: 20px 0 35px 15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-.form-block input {
+.form-block #submit:hover {
+  background: rgb(254, 193, 81);
+  background: linear-gradient(top, rgb(254, 193, 81) 0%, rgb(254, 231, 154) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fec151", endColorstr="#fee79a", GradientType=0);
+}
+
+input {
   margin-right: 0.75em;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin-bottom: 18px;
 }
-.form-block span {
+
+span {
   color: #555;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+.hello form input {
+  font-size: 12px;
+  background: rgb(254, 231, 154);
+  background: linear-gradient(top, rgb(254, 231, 154) 0%, rgb(254, 193, 81) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fee79a", endColorstr="#fec151", GradientType=0);
+  border-radius: 30px;
+  -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  border: 1px solid #D69E31;
+  color: #85592e;
+  cursor: pointer;
+  font: bold 15px Helvetica, Arial, sans-serif;
+  height: 35px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.hello form input:hover {
+  background: rgb(254, 193, 81);
+  background: linear-gradient(top, rgb(254, 193, 81) 0%, rgb(254, 231, 154) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fec151", endColorstr="#fee79a", GradientType=0);
 }
 
 @media screen and (max-width: 900px) {
@@ -100,7 +143,7 @@ h2 {
     align-items: flex-start;
   }
   .form-block div {
-    margin: 50px auto;
+    margin: 25px auto;
     min-width: 200px;
   }
   .form-block #submit {

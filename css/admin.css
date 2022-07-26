@@ -1,59 +1,84 @@
 body {
-    height: 100vw;
-    width: 100%;
-    background-image: url("../img/bg.png");
-    /* -webkit-backdrop-filter: blur(10px);
+  height: 100vw;
+  width: 100%;
+  background-image: url("../img/bg.png");
+  /* -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px); */
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 99% 150%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 99% 150%;
 }
+
 h3 {
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-    color: #495F1D;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  color: #495F1D;
 }
 
 p {
-    float: left;
-    height: 400px;
-    width: 400px;
-    margin-left: 100px;
-    margin-right: 100px;
+  float: left;
+  height: 400px;
+  width: 400px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /* Kostia update */
 
 
 .calc-head {
-	max-width: 1180px;
-	padding-top: 15px;
-	margin: 0 auto;
-  }
-.logo {
-	float: left;
-	height: 130px;
-	width: 216px;
-	background-image: url(../img/logo.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-left: 7%;
-  }
-.hello {
-	float: right;
-	margin-right: 7%;
-  }
-.hello input {
-	height: 25px;
-	width: 120px;
-	cursor: pointer;
-	margin-bottom: 7px;
-  }
+  max-width: 1180px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
 
-  .clearfix:after {
+.logo {
+  float: left;
+  height: 130px;
+  width: 216px;
+  background-image: url(../img/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 7%;
+}
+
+.hello {
+  float: right;
+  margin-right: 7%;
+}
+
+.hello input {
+  height: 25px;
+  width: 120px;
+  cursor: pointer;
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  background: rgb(254, 231, 154);
+  background: linear-gradient(top, rgb(254, 231, 154) 0%, rgb(254, 193, 81) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fee79a", endColorstr="#fec151", GradientType=0);
+  border-radius: 30px;
+  -ms-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  border: 1px solid #D69E31;
+  color: #85592e;
+  cursor: pointer;
+  font: bold 15px Helvetica, Arial, sans-serif;
+  height: 35px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.hello input:hover {
+  background: rgb(254, 193, 81);
+  background: linear-gradient(top, rgb(254, 193, 81) 0%, rgb(254, 231, 154) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fec151", endColorstr="#fee79a", GradientType=0);
+}
+
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -67,31 +92,33 @@ p {
 }
 
 .admin-rule .item {
-    text-align: center;
+  text-align: center;
 
 }
 
 .admin-rule .item:hover {
-    text-align: center;
-    border: 2px solid gray;
+  text-align: center;
+  border: 2px solid gray;
 }
 
 .admin-rule .item span {
-    color: #495F1D;
-    text-align: center;
-    font-size: 29px;
+  color: #495F1D;
+  text-align: center;
+  font-size: 29px;
 }
 
 .admin-rule a {
-    max-width: 900px;
-   text-decoration: none;
+  max-width: 900px;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 620px) {
+  .admin-rule {
+    flex-direction: column;
   }
 
-  @media screen and (max-width: 620px) {
-    .admin-rule {
-        flex-direction: column;
-    }
-
-    body {
-        height: 100%;    }
+  body {
+    height: 100%;
   }
+}

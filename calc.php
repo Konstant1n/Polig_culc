@@ -27,11 +27,11 @@
                 <h3>Вітаємо, <?php echo $user['username']; ?></h3>
 
                 <form>
-                    <input type="button" onclick="window.location.href ='logout.php';" value="Logout" />
+                    <input type="button" onclick="window.location.href ='logout.php';" value="Вийти" />
                 </form>
 
                 <form>
-                    <input type="button" onclick="window.location.href ='/admin/';" value="Admin panel" />
+                    <input type="button" onclick="window.location.href ='/admin/';" value="Управління" />
                 </form>
 
             </div>
